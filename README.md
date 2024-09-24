@@ -1,2 +1,7 @@
-# .pm3-reader
- A program for reading and automatically entering information into an Excel spreadsheet from .pm3 binary files that store data for photopolymer 3D printing.
+# PM3-READER
+
+**PM3-READER** — это простая программа, предназначенная для быстрого и удобного просмотра основного содержимого `.pm3` файлов (нарезанные файлы для 3D-принтера Anycubic Photon M3).
+
+## Описание
+Программа предоставляет удобный способ анализа и отображения данных, содержащихся в `.pm3` файлах, что помогает пользователям быстро получать доступ к важной информации для работы с 3D-печатью.
+
