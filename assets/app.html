@@ -1,13 +1,125 @@
 <html>
   <head>
-    <title>MyApp -- (edit this title in app.html)</title>
-    <style>
-    body {
-      font-family: -apple-system, 'Segoe UI Light', Ubuntu, Arial, sans-serif;
-    }
-    </style>
+    <title>pm3-reader</title>
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
+    
+    <section class="page">
+      <div class="pageWrapper" style="justify-content: center;">
+        <form id="filePathForm" class="block2">
+          <h3>Путь к файлу для чтения: </h3>
+          <input name="filepath" type="text" class="input1" placeholder="путь к .pm3" value="D:\cpp\pm3-reader\pm3-files\test 7.pm3">
+          <span class="errorMsg"></span>
+          <button type="submit" class="button1">Далее</button>
+        </form>
+      </div>
+    </section>
+
+
+    <section id="mainPage" class="page">
+      <div class="pageWrapper">
+        <div style="display: flex; justify-content: space-around;">
+          <div class="block2">
+            <h2>Файл</h2>
+            <div class="inputBlock">
+              <span>Путь к файлу</span>
+              <input name="filepath" type="text" readonly value="pidsaubid 79584 /a fijgf">
+            </div>
+            <div class="inputBlock">
+              <span>Имя файла</span>
+              <input name="filename" type="text" readonly>
+            </div>
+            <div class="inputBlock">
+              <span>Размер файла</span>
+              <input name="filesize" type="text" readonly>
+            </div>
+          </div>
+
+          <div class="block2" id="previewBlock" style="border-radius: 10px; overflow: hidden; padding: 0;">
+            <img src="./img/preview.bmp" alt="Превью не найдено" height="240">
+          </div>
+        </div>
+
+  
+        <div style="display: flex; justify-content: space-around;">
+          <div class="block2">
+            <h2>Слои основания</h2>
+            <div class="inputBlock">
+              <span>Кол-во слоев</span>
+              <input name="flayer" type="number" readonly>
+            </div>
+            <div class="inputBlock">
+              <span>Время отверждения</span>
+              <input name="fexpo" type="number" readonly>
+            </div>
+            <div class="inputBlock">
+              <span>Кол-во переходных слоев</span>
+              <input name="ftranslayer" type="number" readonly>
+            </div>
+            <div class="inputBlock">
+              <span>Lift distance</span>
+              <div>
+                <input name="fliftdist1" type="number" readonly>>
+                <input name="fliftdist2" type="number" readonly>
+              </div>
+            </div>
+            <div class="inputBlock">
+              <span>Lift speed</span>
+              <div>
+                <input name="fliftspeed1" type="number" readonly>>
+                <input name="fliftspeed2" type="number" readonly>
+              </div>
+            </div>
+            <div class="inputBlock">
+              <span>Retract speed</span>
+              <div>
+                <input name="fretractspeed1" type="number" readonly>>
+                <input name="fretractspeed2" type="number" readonly>
+              </div>
+            </div>
+          </div>
+  
+          <div class="block2">
+            <h2>Обычные слои</h2>
+            <div class="inputBlock">
+              <span>Толщина слоя</span>
+              <input name="thick" type="number" readonly>
+            </div>
+            <div class="inputBlock">
+              <span>Задержка выключения засветки</span>
+              <input name="delay" type="number" readonly>
+            </div>
+            <div class="inputBlock">
+              <span>Время отверждения</span>
+              <input name="expo" type="number" readonly>
+            </div>
+            <div class="inputBlock">
+              <span>Lift distance</span>
+              <div>
+                <input name="liftdist1" type="number" readonly>>
+                <input name="liftdist2" type="number" readonly>
+              </div>
+            </div>
+            <div class="inputBlock">
+              <span>Lift speed</span>
+              <div>
+                <input name="liftspeed1" type="number" readonly>>
+                <input name="liftspeed2" type="number" readonly>
+              </div>
+            </div>
+            <div class="inputBlock">
+              <span>Retract speed</span>
+              <div>
+                <input name="retractspeed1" type="number" readonly>>
+                <input name="retractspeed2" type="number" readonly>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="./js/script.js"></script>
   </body>
 </html>
